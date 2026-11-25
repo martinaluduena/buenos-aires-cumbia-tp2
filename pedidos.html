@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis pedidos - Buenos Aires Cumbia 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="LOGO BUENOS AIRES CUMBIA.png" alt="Buenos Aires Cumbia" class="logo-chico">
+    <input type="checkbox" id="menu-check" aria-hidden="true">
+    <label for="menu-check" class="hamburguesa" aria-label="Abrir menú">&#9776;</label>
+    <nav>
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#festival">El festival</a>
+      <a href="index.html#tienda">Tienda</a>
+      <a href="index.html#como-llegar">Cómo llegar</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="pedidos.html">Mis pedidos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenido">
+      <h2>Mis pedidos</h2>
+      <p>Acá ves el historial de tus compras en Buenos Aires Cumbia.</p>
+      <div class="tabla-scroll">
+        <table>
+          <caption>Historial de compras</caption>
+          <thead><tr><th>N° de pedido</th><th>Fecha</th><th>Producto</th><th>Cantidad</th><th>Total</th><th>Estado</th></tr></thead>
+          <tbody>
+            <tr><td>BAC-0003</td><td>12/02/2026</td><td>Entrada VIP</td><td>2</td><td>$150.000</td><td><span class="estado">Pagado</span></td></tr>
+            <tr><td>BAC-0002</td><td>20/01/2026</td><td>Pack Amigos x4</td><td>1</td><td>$120.000</td><td><span class="estado">Pagado</span></td></tr>
+            <tr><td>BAC-0001</td><td>05/12/2025</td><td>Entrada General</td><td>1</td><td>$33.000</td><td><span class="estado">Reembolsado</span></td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="4">Total gastado</td><td colspan="2">$270.000</td></tr></tfoot>
+        </table>
+      </div>
+      <p><a class="boton" href="index.html#tienda">Seguir comprando</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>Buenos Aires Cumbia 2026 - Estadio Obras, Buenos Aires -
+      <a href="https://www.instagram.com/buenosairescumbia/">Instagram</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprar - Buenos Aires Cumbia 2026</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="LOGO BUENOS AIRES CUMBIA.png" alt="Buenos Aires Cumbia" class="logo-chico">
+    <input type="checkbox" id="menu-check" aria-hidden="true">
+    <label for="menu-check" class="hamburguesa" aria-label="Abrir menú">&#9776;</label>
+    <nav>
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#festival">El festival</a>
+      <a href="index.html#tienda">Tienda</a>
+      <a href="index.html#como-llegar">Cómo llegar</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="pedidos.html">Mis pedidos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenido pasos">
+      <h2>Comprar entradas</h2>
+
+      <form id="paso-1" class="paso">
+        <fieldset>
+          <legend>Paso 1 de 3: Datos personales</legend>
+          <label for="nombre">Nombre y apellido</label>
+          <input type="text" id="nombre" name="nombre" placeholder="" required>
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="" required>
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="" required>
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" placeholder="Calle y número" required>
+        </fieldset>
+        <div class="acciones"><a class="boton" href="#paso-2">Continuar</a></div>
+      </form>
+
+      <form id="paso-2" class="paso">
+        <fieldset>
+          <legend>Paso 2 de 3: Información de pago</legend>
+          <label class="opcion"><input type="radio" name="metodo" checked> Tarjeta de crédito</label>
+          <label class="opcion"><input type="radio" name="metodo"> Tarjeta de débito</label>
+          <label class="opcion"><input type="radio" name="metodo"> Mercado Pago</label>
+          <label class="opcion"><input type="radio" name="metodo"> Transferencia bancaria</label>
+          <label for="tarjeta">Número de tarjeta</label>
+          <input type="text" id="tarjeta" name="tarjeta" placeholder="0000 0000 0000 0000" required>
+          <label for="titular">Titular</label>
+          <input type="text" id="titular" name="titular" placeholder="" required>
+          <label for="vence">Vencimiento</label>
+          <input type="text" id="vence" name="vence" placeholder="MM/AA" required>
+          <label for="codigo">Código de seguridad</label>
+          <input type="text" id="codigo" name="codigo" placeholder="123" required>
+        </fieldset>
+        <div class="acciones"><a class="boton" href="#paso-1">Volver</a><a class="boton" href="#paso-3">Continuar</a></div>
+      </form>
+
+      <div id="paso-3" class="paso">
+        <fieldset>
+          <legend>Paso 3 de 3: Confirmación del pedido</legend>
+          <div class="tabla-scroll">
+          <table>
+            <caption>Resumen de tu pedido</caption>
+            <thead><tr><th>Producto</th><th>Cantidad</th><th>Subtotal</th></tr></thead>
+            <tbody>
+              <tr><td>Entrada VIP</td><td>2</td><td>$150.000</td></tr>
+              <tr><td>Entrada General</td><td>1</td><td>$33.000</td></tr>
+            </tbody>
+            <tfoot><tr><td colspan="2">Total</td><td>$183.000</td></tr></tfoot>
+          </table>
+          </div>
+          <p>Las entradas se envían al correo indicado. Evento solo para mayores de 18 años.</p>
+        </fieldset>
+        <div class="acciones"><a class="boton" href="#paso-2">Volver</a><a class="boton" href="pedidos.html">Confirmar pedido</a></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Buenos Aires Cumbia 2026 - Estadio Obras, Buenos Aires -
+      <a href="https://www.instagram.com/buenosairescumbia/">Instagram</a></p>
+  </footer>
+</body>
+</html>
