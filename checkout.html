@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="LOGO BUENOS AIRES CUMBIA.png" alt="Buenos Aires Cumbia" class="logo-chico">
+    <img src="logo-buenos-aires-cumbia.png" alt="Buenos Aires Cumbia" class="logo-chico">
     <input type="checkbox" id="menu-check" aria-hidden="true">
     <label for="menu-check" class="hamburguesa" aria-label="Abrir menú">&#9776;</label>
     <nav>
@@ -28,14 +28,24 @@
       <form id="paso-1" class="paso">
         <fieldset>
           <legend>Paso 1 de 3: Datos personales</legend>
+          <div class="campos">
+          <div class="campo">
           <label for="nombre">Nombre y apellido</label>
           <input type="text" id="nombre" name="nombre" placeholder="" required>
+          </div>
+          <div class="campo">
           <label for="correo">Correo electrónico</label>
           <input type="email" id="correo" name="correo" placeholder="" required>
+          </div>
+          <div class="campo">
           <label for="telefono">Teléfono</label>
           <input type="tel" id="telefono" name="telefono" placeholder="" required>
+          </div>
+          <div class="campo">
           <label for="direccion">Dirección</label>
           <input type="text" id="direccion" name="direccion" placeholder="Calle y número" required>
+          </div>
+          </div>
         </fieldset>
         <div class="acciones"><a class="boton" href="#paso-2">Continuar</a></div>
       </form>
@@ -47,14 +57,24 @@
           <label class="opcion"><input type="radio" name="metodo"> Tarjeta de débito</label>
           <label class="opcion"><input type="radio" name="metodo"> Mercado Pago</label>
           <label class="opcion"><input type="radio" name="metodo"> Transferencia bancaria</label>
+          <div class="campos">
+          <div class="campo">
           <label for="tarjeta">Número de tarjeta</label>
           <input type="text" id="tarjeta" name="tarjeta" placeholder="0000 0000 0000 0000" required>
+          </div>
+          <div class="campo">
           <label for="titular">Titular</label>
           <input type="text" id="titular" name="titular" placeholder="" required>
+          </div>
+          <div class="campo">
           <label for="vence">Vencimiento</label>
           <input type="text" id="vence" name="vence" placeholder="MM/AA" required>
+          </div>
+          <div class="campo">
           <label for="codigo">Código de seguridad</label>
           <input type="text" id="codigo" name="codigo" placeholder="123" required>
+          </div>
+          </div>
         </fieldset>
         <div class="acciones"><a class="boton" href="#paso-1">Volver</a><a class="boton" href="#paso-3">Continuar</a></div>
       </form>
